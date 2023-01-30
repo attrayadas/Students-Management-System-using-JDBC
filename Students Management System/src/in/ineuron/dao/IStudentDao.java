@@ -7,7 +7,7 @@ public interface IStudentDao {
 
 	Student findById(Integer sid); //Reading a record
 	
-	String updateById(Integer sid); //Updating a record
+	String updateById(Student student); //Updating a record
 
 	String deleteById(Integer sid); //Deleting a record
 }

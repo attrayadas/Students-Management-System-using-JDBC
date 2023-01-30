@@ -12,23 +12,25 @@ public class StudentControllerImpl implements IStudentController {
 	public String save(Student student) {
 		stdService = StudentServiceFactory.getStudentService();
 		System.out.println("Implementation class name is: "+stdService.getClass().getName());
-		stdService.save(student);
-		return null;
+		return stdService.save(student);
 	}
 
 	@Override
 	public Student findById(Integer sid) {
-		return null;
+		stdService = StudentServiceFactory.getStudentService();
+		return stdService.findById(sid);
 	}
 
 	@Override
-	public String updateById(Integer sid) {
-		return null;
+	public String updateById(Student student) {
+		stdService = StudentServiceFactory.getStudentService();
+		return stdService.updateById(student);
 	}
 
 	@Override
 	public String deleteById(Integer sid) {
-		return null;
+		stdService = StudentServiceFactory.getStudentService();
+		return stdService.deleteById(sid);
 	}
 
 }

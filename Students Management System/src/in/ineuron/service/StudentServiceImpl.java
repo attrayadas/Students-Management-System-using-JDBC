@@ -12,23 +12,25 @@ public class StudentServiceImpl implements IStudentService {
 	public String save(Student student) {
 		studentDao = StudentDaoFactory.getStudentDao();
 		System.out.println("Implementation class name is :"+studentDao.getClass().getName());
-		studentDao.save(student);
-		return null;
+		return studentDao.save(student);
 	}
 
 	@Override
 	public Student findById(Integer sid) {
-		return null;
+		studentDao = StudentDaoFactory.getStudentDao();
+		return studentDao.findById(sid);
 	}
 
 	@Override
-	public String updateById(Integer sid) {
-		return null;
+	public String updateById(Student student) {
+		studentDao = StudentDaoFactory.getStudentDao();
+		return studentDao.updateById(student);
 	}
 
 	@Override
 	public String deleteById(Integer sid) {
-		return null;
+		studentDao = StudentDaoFactory.getStudentDao();
+		return studentDao.deleteById(sid);
 	}
 
 }
