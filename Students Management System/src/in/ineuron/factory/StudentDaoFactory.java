@@ -5,7 +5,7 @@ import in.ineuron.dao.StudentDaoImpl;
 
 public class StudentDaoFactory {
 
-	private static IStudentDao studentDao=null;
+	private static IStudentDao studentDao = null;
 
 	private StudentDaoFactory() {
 	}

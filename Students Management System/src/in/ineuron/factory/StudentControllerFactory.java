@@ -12,9 +12,9 @@ public class StudentControllerFactory {
 	}
 
 	public static IStudentController getStudentController() {
-		if (studentController == null) 
+		if (studentController == null)
 			studentController = new StudentControllerImpl();
-		
+
 		return studentController;
 	}
 }

@@ -5,13 +5,12 @@ import in.ineuron.factory.StudentServiceFactory;
 import in.ineuron.service.IStudentService;
 
 public class StudentControllerImpl implements IStudentController {
-	
+
 	IStudentService stdService;
 
 	@Override
 	public String save(Student student) {
 		stdService = StudentServiceFactory.getStudentService();
-		System.out.println("Implementation class name is: "+stdService.getClass().getName());
 		return stdService.save(student);
 	}
 

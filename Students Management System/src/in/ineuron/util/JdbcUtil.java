@@ -8,11 +8,11 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class JdbcUtil {
-	
+
 	private JdbcUtil() {
-		
+
 	}
-	
+
 	static {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -20,7 +20,7 @@ public class JdbcUtil {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static Connection getJdbcConnection() throws SQLException, IOException {
 		FileInputStream fis = new FileInputStream("src\\in\\ineuron\\properties\\db.properties");
 		Properties properties = new Properties();
@@ -30,7 +30,7 @@ public class JdbcUtil {
 		String password = properties.getProperty("password");
 		Connection connection = DriverManager.getConnection(url, username, password);
 		return connection;
-		
+
 	}
 
 }

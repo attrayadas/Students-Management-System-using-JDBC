@@ -94,7 +94,7 @@ public class StudentDaoImpl implements IStudentDao {
 				pstmt.setString(2, student.getEmail());
 				pstmt.setString(3, student.getCity());
 				pstmt.setString(4, student.getCountry());
-				pstmt.setInt(5,  student.getId());
+				pstmt.setInt(5, student.getId());
 			}
 			if (pstmt != null) {
 				int rowAffected = pstmt.executeUpdate();
