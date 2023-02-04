@@ -7,7 +7,7 @@ It is a console-based ***Java Standalone Application*** which connects with MySQ
 
 ## Architecture
 
-![JDBCProjectArchitecture](https://user-images.githubusercontent.com/96123861/216664576-23ccccfa-3552-4376-9466-9ec73feeadfb.png)
+![JDBCProjectArchitecture](https://user-images.githubusercontent.com/96123861/216773924-8ff245a0-bd45-4cb6-96ac-05b9179c328f.png)
 ## Preview
 ![JDBCProjectDemo](https://user-images.githubusercontent.com/96123861/216673566-aedeccda-5844-461f-87b1-5ae5c4e69305.gif)
 
